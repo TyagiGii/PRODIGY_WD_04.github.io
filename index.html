@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanish Tyagi - Portfolio</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ff6f61, #de6f9f);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .hero {
+            margin-top: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .about-section,
+        .skills-section,
+        .projects-section,
+        .contact-section {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+        }
+
+        .about-section {
+            background-color: #e0f7fa;
+        }
+
+        .skills-section {
+            background-color: #f1f8e9;
+        }
+
+        .projects-section {
+            background-color: #fce4ec;
+        }
+
+        .contact-section {
+            background-color: #e8f5e9;
+        }
+
+        .skills-list,
+        .project-card {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skills-list li,
+        .project-card {
+            background-color: #ffeb3b;
+            border: 2px solid #fbc02d;
+            flex-direction: row;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            font-weight: bold;
+        
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        form button:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #status {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hello, I'm Tanish Tyagi</h1>
+            <p>Creative Web Developer</p>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer specializing in front-end technologies such as HTML, CSS, and JavaScript. My
+            approach to web design combines functionality with vibrant aesthetics to create engaging user experiences.
+            Currently, I'm expanding my expertise in full-stack development.</p>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Stopwatch Web Application</h3>
+            <p>To build a stopwatch web application, you can use HTML, CSS, and JavaScript. HTML is used to structure
+                the elements of the application. By implementing functions for starting, pausing, and resetting the
+                stopwatch, </p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Tic-Tac-Toe Web Application</h3>
+            <p>To build a tic-tac-toe web application, you can use HTML, CSS, and JavaScript. By implementing functions
+                to handle user clicks, track game state, and check for winning conditions, you can create an interactive
+                and engaging tic-tac-toe game. </p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tanish Tyagi. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); 
+
+            const name = event.target.name.value;
+            const email = event.target.email.value;
+            const message = event.target.message.value;
+
+            if (name && email && message) {
+                document.getElementById('status').textContent = 'Thank you for your message! I will get back to you soon.';
+                event.target.reset(); 
+            } else {
+                document.getElementById('status').textContent = 'Please fill in all fields before submitting.';
+            }
+        });
+    </script>
+</body>
+
+</html>
